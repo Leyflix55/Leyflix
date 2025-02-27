@@ -1,110 +1,74 @@
-/* Apply background image */
+/* General Styles */
 body {
-    background-image: url('images/background.jpg'); /* Make sure the image file is in the 'images' folder */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
     color: white;
 }
 
-/* Header styling */
+/* Header */
 header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
     font-size: 24px;
     font-weight: bold;
 }
 
-/* Main content area */
-main {
-    text-align: center;
-    padding: 50px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-/* Buttons styling */
-.button {
-    background-color: #ff6600;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
-    display: inline-block;
-    margin: 10px;
-}
-
-.button:hover {
-    background-color: #cc5200;
-}
-
-/* Footer styling */
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    main {
-        padding: 20px;
-    }
-
-    .button {
-        font-size: 16px;
-        padding: 12px 25px;
-    }
-}
-body {
-    background-image: url('images/background.jpg'); /* Make sure the filename matches */
-    .featured {
-    text-align: center;
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.8);
     color: white;
+    font-size: 18px;
 }
 
-.movie-container {
+/* Hero Section */
+.hero {
+    height: 80vh;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.movie {
-    background: #222;
-    padding: 15px;
-    border-radius: 10px;
-    max-width: 250px;
+    align-items: center;
     text-align: center;
 }
 
-.movie img {
-    width: 100%;
-    border-radius: 10px;
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-.movie h3 {
-    margin: 10px 0;
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.movie p {
-    font-size: 14px;
-    color: #bbb;
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
 }
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
 }
