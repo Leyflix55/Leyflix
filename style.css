@@ -68,6 +68,41 @@ footer {
 }
 body {
     background-image: url('images/background.jpg'); /* Make sure the filename matches */
+    .featured {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie h3 {
+    margin: 10px 0;
+}
+
+.movie p {
+    font-size: 14px;
+    color: #bbb;
+}
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
