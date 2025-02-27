@@ -84,3 +84,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+body {
+    background-image: url('images/background.jpg'); /* Make sure the filename matches */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Makes sure it covers the whole screen */
+}
